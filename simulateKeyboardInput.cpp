@@ -1,19 +1,19 @@
 #include <Windows.h>
 
-void pressSpacebar(INPUT ip)
+void pressSpacebar(INPUT& ip)
 {
     ip.ki.dwFlags = 0; // 0 for key press
     SendInput(1, &ip, sizeof(INPUT));
 }
 
-void releaseSpacebar(INPUT ip)
+void releaseSpacebar(INPUT& ip)
 {
     ip.ki.dwFlags = KEYEVENTF_KEYUP; // KEYEVENTF_KEYUP for key release
     SendInput(1, &ip, sizeof(INPUT));
     Sleep(50);
 }
 
-void holdSpacebar(INPUT ip)
+void holdSpacebar(INPUT& ip)
 {
     pressSpacebar(ip);
     releaseSpacebar(ip);
@@ -33,6 +33,6 @@ int main()
     //        holdSpacebar(ip);
     //    }
     //}
-    exit(0);
+    return 0;
 }
 
