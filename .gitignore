@@ -22,3 +22,6 @@ Release
 ipch
 *sdf
 .vs
+*.vcxproj.filters
+*.vcxproj
+*.vcxproj.user
