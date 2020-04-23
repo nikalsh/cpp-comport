@@ -148,7 +148,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="simulateKeyboardInput.cpp" />
+    <ClCompile Include="ComPort.cpp" />
+    <ClCompile Include="KeyboardSimulator.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="TestComPort.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ComPort.h" />
+    <ClInclude Include="KeyboardSimulator.h" />
+    <ClInclude Include="TestComPort.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
