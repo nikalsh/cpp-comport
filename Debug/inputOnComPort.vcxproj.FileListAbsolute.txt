@@ -1,0 +1,2 @@
+d:\code\cpp\inputOnComPort\inputOnComPort\Debug\ComPortListener.exe
+d:\code\cpp\inputOnComPort\inputOnComPort\Debug\ComPortListener.pdb
