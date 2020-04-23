@@ -1,7 +1,6 @@
 #include "ComPort.h";
 #include <iostream>;
 #include <Windows.h>
-
 #pragma once
 
 ComPort::ComPort(std::string& ComPortName)

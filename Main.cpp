@@ -3,7 +3,6 @@
 #include "ComPort.h";
 #include "TestComPort.h"
 #include "KeyboardSimulator.h"
-
 #pragma once
 
 int main(int argc, char* argv[])
@@ -38,7 +37,6 @@ int main(int argc, char* argv[])
 	else {
 		std::cout << "Could not open port" << std::endl;
 	}
-
 	return 0;
 }
 
