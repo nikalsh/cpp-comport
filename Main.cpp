@@ -1,6 +1,6 @@
 #include <Windows.h>
 #include <iostream>
-#include "ComPort.h";
+#include "ComPort.h"
 #include "TestComPort.h"
 #include "KeyboardSimulator.h"
 #pragma once
@@ -14,7 +14,7 @@ int main(int argc, char* argv[])
 	}
 
 	std::string ComPortName = arg;
-	std::cout << "Opening Serial Port: " << ComPortName << std::endl;
+	std::cout << ComPortName << ": Opening Serial Port" << std::endl;
 
 	ComPort COM(ComPortName);
 	KeyboardSimulator keyboard;
@@ -35,8 +35,7 @@ int main(int argc, char* argv[])
 		}
 	}
 	else {
-		std::cout << "Could not open port" << std::endl;
+		std::cout << ComPortName << ": Could not open port" << std::endl;
 	}
 	return 0;
 }
-
