@@ -1,9 +1,7 @@
 
 #include <Windows.h>
 #include <string>
-
 #pragma once
-
 
 class ComPort {
 

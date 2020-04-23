@@ -2,9 +2,6 @@
 #include <iostream>
 #include "KeyboardSimulator.h"
 
-
-
-
 KeyboardSimulator::KeyboardSimulator()
 {
 	input->type = INPUT_KEYBOARD;
@@ -15,13 +12,11 @@ KeyboardSimulator::KeyboardSimulator()
 		//0x20; // virtual-key code for spacebar
 }
 
-
 void KeyboardSimulator::pressSpacebar()
 {
 	input->ki.dwFlags = 0;
 	SendInput(1, input, sizeof(INPUT));
 }
-
 
 void KeyboardSimulator::releaseSpacebar()
 {

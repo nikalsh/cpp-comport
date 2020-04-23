@@ -3,10 +3,7 @@
 #include <Windows.h>
 #include "ComPort.h"
 #include "TestComPort.h"
-
-
 #pragma once
-
 
 void Test()
 {
@@ -37,7 +34,6 @@ void Test()
 		{
 			std::cout << COM2.ComPortName << ": DSR is HIGH" << std::endl;
 		}
-
 	}
 
 	Sleep(1000);
@@ -51,5 +47,4 @@ void Test()
 	{
 		std::cout << "DSR is low COM2" << std::endl;
 	}
-
 }
